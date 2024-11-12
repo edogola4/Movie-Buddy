@@ -130,7 +130,7 @@ const heroBanner = function ({ results: movieList }) {
     banner.querySelector(".control-inner").appendChild(controlItem);
   }
 
-  pageContent.appendChild(banner);
+  pageContent.appendChild(banner)
 
   addHeroSlide();
 
