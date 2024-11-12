@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #141414;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+*::selection {
+  background: #e50914;
+  color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(48, 48, 48);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Pre-loader */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  height: 6rem;
+  background-color: #141414;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e50914;
+  text-decoration: none;
+}
+
+header .logo:hover {
+  color: #fff;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar li {
+  margin-left: 2rem;
+}
+
+header .navbar ul li a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #e50914;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 0.5rem;
+}
+
+#menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #141414;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  header .navbar ul li a {
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    color: #e50914;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+/* Hero section */
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(./assets/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.home .content {
+  flex: 1 1 50rem;
+  z-index: 1;
+}
+
+.home .image {
+  flex: 1 1 50rem;
+  z-index: 1;
+}
+
+.home .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(17, 114, 170, 0.3);
+  cursor: pointer;
+}
+
+.home .content h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home .content h2 span {
+  color: #e50914;
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+}
+
+.home .btn {
+  margin-top: 2rem;
+  position: absolute;
+  padding: 1.6rem 3rem;
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 4rem;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.home .btn:hover {
+  background-color: #ff0a0a;
+}
+
+/* Grid Layout for Content */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.socials .social-icons a {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #141414;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 100%;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.socials .social-icons a:hover {
+  background-color: #e50914;
+}
+
+/* Footer */
+footer {
+  background-color: #141414;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #e50914;
+}
+
+footer a:hover {
+  color: #fff;
+}
