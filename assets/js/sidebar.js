@@ -56,7 +56,7 @@ export function sidebar() {
   </div>
 
   <div class="sidebar-footer">
-        <h5 class="credit">Designed with <i class="fa fa-heart pulse"></i> by Brandon<a href="https://github.com/edogola4">from Nairobi, Kenya</a></h5>
+        <h3 class="credit">Designed with <i class="fa fa-heart pulse"></i> by Brandon<a href="https://github.com/edogola4">from Nairobi, Kenya</a></h3>
         <p href="https://github.com/edogola4">&copy; 2024 Movie Buddy. All rights reserved.</p>
     
     <img src="./assets/images/tmdb-logo.png" width="130" height="17" alt="the movie database logo" />
