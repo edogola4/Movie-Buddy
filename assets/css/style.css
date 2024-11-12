@@ -136,9 +136,9 @@
 
 :root {
   /* Primary color scheme inspired by a modern, cinematic look for movie nights */
-  --background: #0f1115; /* Dark background for movie app atmosphere */
-  --banner-background: #313036;
-  --white-alpha-20: #ffffff33;
+  --background: #141414; /* Dark background for movie app atmosphere */
+  --banner-background: #384141;
+  --white-alpha-20: #fa070733;
   --on-background: #e5eeff; /* Light color for text to contrast the dark background */
   --on-surface: #eae5ff;
   --on-surface-variant: #6f6f71;
