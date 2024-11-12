@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary meta tags -->
-    <title>Movie Buddy | Movie Details</title>
     <meta
       name="description"
-      content="Discover detailed information about your favorite movies with Movie Buddy."
+      content="Movie Buddy is your personalized movie app to explore, discover, and track movies you love."
     />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets1/images/favicon.png" type="image/svg+xml" />
 
-    <!-- Google Font Link -->
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,10 +21,16 @@
       rel="stylesheet"
     />
 
-    <!-- Custom CSS Link -->
+    <!-- Font Awesome CDN --
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+
+
+
+    <!-- custom css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- Custom JavaScript Link -->
+    <!-- custom js link -->
     <script src="./assets/js/global.js" defer></script>
     <script src="./assets/js/detail.js" type="module"></script>
   </head>
@@ -33,22 +38,23 @@
   <body>
     <!-- #HEADER -->
     <header class="header">
-      <a href="./index.html" class="logo">
+     <a href="./index.html" class="logo">
         <img
-          src="./assets/images/movie-buddy-logo.svg"
+          src="./assets/images/logo.png"
           width="140"
           height="32"
-          alt="Movie Buddy Home"
+          alt="Movie-buddy"
         />
       </a>
+
 
       <div class="search-box" search-box>
         <div class="search-wrapper" search-wrapper>
           <input
             type="text"
             name="search"
-            aria-label="Search movies"
-            placeholder="Search for movies..."
+            aria-label="search movies"
+            placeholder="Search any movies..."
             autocomplete="off"
             class="search-field"
             search-field
@@ -57,7 +63,7 @@
             src="./assets/images/search.png"
             width="24"
             height="24"
-            alt="Search icon"
+            alt="search"
             class="leading-icon"
           />
         </div>
@@ -67,7 +73,7 @@
             src="./assets/images/close.png"
             width="24"
             height="24"
-            alt="Close search box"
+            alt="close search box"
           />
         </button>
       </div>
@@ -77,7 +83,7 @@
           src="./assets/images/search.png"
           width="24"
           height="24"
-          alt="Open search box"
+          alt="open search box"
         />
       </div>
 
@@ -86,49 +92,24 @@
           src="./assets/images/menu.png"
           width="24"
           height="24"
-          alt="Open menu"
+          alt="open menu"
           class="menu"
         />
         <img
           src="./assets/images/menu-close.png"
           width="24"
           height="24"
-          alt="Close menu"
+          alt="close menu"
           class="close"
         />
       </button>
     </header>
-
     <main>
       <!-- #SIDEBAR -->
-      <nav class="sidebar" sidebar>
-        <!-- Add sidebar content here if needed -->
-      </nav>
+      <nav class="sidebar" sidebar></nav>
       <div class="overlay" overlay menu-toggler></div>
 
-      <!-- Movie Detail Content -->
-      <article class="container" page-content>
-        <section class="movie-detail">
-          <div class="movie-poster">
-            <img
-              src="./assets/images/default-movie-poster.jpg"
-              alt="Movie Poster"
-              width="300"
-              height="450"
-            />
-          </div>
-
-          <div class="movie-info">
-            <h1 class="movie-title">Movie Title</h1>
-            <p class="movie-release-date">Release Date: <span id="release-date">2023-01-01</span></p>
-            <p class="movie-rating">Rating: <span id="rating">8.5/10</span></p>
-            <p class="movie-genre">Genre: <span id="genre">Drama, Adventure</span></p>
-            <p class="movie-description">
-              Discover the captivating story of [Movie Title]. Follow the journey, experience the emotions, and delve into a world beyond the screen with Movie Buddy.
-            </p>
-          </div>
-        </section>
-      </article>
+      <article class="container" page-content></article>
     </main>
   </body>
 </html>
