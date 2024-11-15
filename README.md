@@ -43,3 +43,16 @@ Modular JavaScript files for scalability.
 - **Discover movies based on genres or trends.**
 - **Create a curated watchlist for binge sessions.**
 - **Explore movie trailers and ratings to decide what to watch.**
+
+  ## Contributing
+
+Contributions to the project are highly encouraged. If you have suggestions for enhancements or wish to report issues, please submit a pull request or open an issue on the repository.
+
+## License
+
+This project does not currently have a specified license. Users are free to utilize and modify the application as needed.
+
+## Acknowledgments
+
+I extend my gratitude myself as a contributor/developer and users for their valuable feedback and support.
+
