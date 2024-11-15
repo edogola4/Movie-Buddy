@@ -40,6 +40,6 @@ Modular JavaScript files for scalability.
   
 ## Usage Scenarios:
 
-Discover movies based on genres or trends.
-Create a curated watchlist for binge sessions.
-Explore movie trailers and ratings to decide what to watch.
+- **Discover movies based on genres or trends.**
+- **Create a curated watchlist for binge sessions.**
+- **Explore movie trailers and ratings to decide what to watch.**
