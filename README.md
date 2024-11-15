@@ -14,17 +14,32 @@ Movie Buddy is a web app that helps plan movie nights by suggesting movies based
 
 The Movie Buddy project uses the following technologies and stacks:
 
-# Frontend:
+## Frontend:
 
 - **HTML5**: Structure and content of web pages.
 - **CSS3**: Styling and layout.
 - **JavaScript**: Interactivity and dynamic content.
   
-  # API Integration:
+  ## API Integration:
 - **TMDB API**: For retrieving movie data, including titles, genres, posters, ratings, and recommendations.
   
-# Deployment:
+## Deployment:
 - **Vercel**: Hosting and deployment.
   
-# Development Tools:
+## Development Tools:
 Modular JavaScript files for scalability.
+
+
+## Future Improvements:
+
+- **Enhanced Recommendation System**: Introduce personalized recommendations based on user watch history and ratings.
+- **User Accounts**: Allow users to create profiles, save watchlists, and sync preferences.
+- **Social Features**: Enable sharing watchlists and movie reviews with friends.
+- **Improved UI/UX**: Add animations, better visuals, and responsive design.
+- **Advanced Filters**: Include filters for directors, release years, or languages.
+  
+## Usage Scenarios:
+
+Discover movies based on genres or trends.
+Create a curated watchlist for binge sessions.
+Explore movie trailers and ratings to decide what to watch.
