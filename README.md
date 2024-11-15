@@ -4,7 +4,7 @@ Movie Buddy is a web app that helps plan movie nights by suggesting movies based
 
 ## Movie Buddy Features :
 
- **1. Movie Discovery:** Explore movies across diverse genres with a searchable interface.
-**2. Detailed Movie Information**: Access comprehensive details, including descriptions, cast, and ratings.
-**3. Trailers and Links**: View movie trailers and access related external resources.
-**4. User-Friendly Navigation**: Simple and clean layout for seamless browsing.
+ -**1. Movie Discovery:** Explore movies across diverse genres with a searchable interface.
+-**2. Detailed Movie Information**: Access comprehensive details, including descriptions, cast, and ratings.
+-**3. Trailers and Links**: View movie trailers and access related external resources.
+-**4. User-Friendly Navigation**: Simple and clean layout for seamless browsing.
